@@ -42,6 +42,17 @@
             filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
         }
 
+        /* LOGO EN LA ESQUINA SUPERIOR */
+        .corner-logo {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            width: 60px;
+            height: auto;
+            z-index: 100;
+            pointer-events: none;
+        }
+
         /* Contenedor de la gorra - Ajustado para ser más pequeña */
         .hat-container {
             position: absolute;
@@ -128,6 +139,8 @@
 <body>
     <div class="background"></div>
     
+    <img src="dandy.png" alt="Dandy Logo" class="corner-logo">
+
     <img src="titulo.png" alt="Dandy Hats" class="title-top">
 
     <div class="hat-container">
